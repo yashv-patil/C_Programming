@@ -21,7 +21,7 @@ int main()
     int iRet = 0;
 
     // Step 1 Accept the Number of elements
-    printf("Enter Numbet of Element :\n");
+    printf("Enter Number of Element :\n");
     scanf("%d",&iLength);
 
     // Step 2 Allocate the Memory
