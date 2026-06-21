@@ -3,20 +3,26 @@
 void Pattern(int iRow, int iCol)
 {
     int i = 0, j = 0;
+    int iCnt = iCol;
 
-    for(i = 1; i <= iRow; i++)
+    for(i = 1; i <= iRow; i++, iCnt--)
     {
         for(j = 1; j <= iCol; j++)
         {
-            if( i <= j)
+            if(i == 1 || i == iRow || j == 1 || j == iCol || j == iCnt)
             {
-                printf("%d\t", j);
+                printf("*\t");
+            }
+            else if(iCnt > j)
+            {
+                printf("#\t");
             }
             else
             {
-                printf(" \t");
+                printf("$\t");
             }
-        } 
+
+        }
         printf("\n"); 
     }
 }
